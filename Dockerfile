@@ -5,7 +5,7 @@ FROM registry.access.redhat.com/ubi8/ubi:latest
 WORKDIR /usr/src/app
 
 # Copy the Java application JAR file into the container
-COPY target/*.jar HelloWorld.jar
+COPY ./target/*.jar HelloWorld.jar
 
 # Set the default command to run the Java application
 CMD ["java", "-jar", "HelloWorld.jar"]
